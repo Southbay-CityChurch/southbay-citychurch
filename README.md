@@ -1,4 +1,4 @@
-southbay-citychurch
+Southbay CityChurch Website repository
 ===================
 
 Website for Southbay CityChurch website
