@@ -1,0 +1,60 @@
+/* -------------------------------------------------------------- 
+   
+   Boilerplate forms.css
+   * Sets up some default styling for forms
+   
+-------------------------------------------------------------- */
+
+label { font-weight: bold; }
+
+/* Fieldsets */
+fieldset { padding: 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ddd; }
+legend { padding: 0 .4em; font-weight: bold; font-size: 1.2em; }
+
+/* Textareas */
+textarea { margin: 0.5em 0.5em 0 0; }
+textarea { padding: .4em; }
+
+
+/* hForm
+-------------------------------------------------------------- */
+form.hform p { margin: 0 0 .5em; }
+form.hform p label { float: left; width: 100px; }
+
+form.hform p input { width: 200px; }
+form.hform p select { width: 200px; }
+
+form.hform p input.button { width: auto; }
+form.hform p input.checkbox { width: auto; }
+form.hform p input.radio { width: auto; }
+
+form.hform p.checkbox { margin-left: 100px; }
+form.hform p.checkbox label { float: none; }
+form.hform p.checkbox input { width: auto; }
+
+
+/* vForm
+-------------------------------------------------------------- */
+form.vform p { margin: 0 0 .5em; }
+form.vform p label { display: block; }
+
+form.vform p.checkbox label { display: inline; }
+
+
+/* Custom Form elements
+-------------------------------------------------------------- */
+/* align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+.ie6 input,
+input[type="radio"]    { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+
+/* hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button { cursor: pointer; }
+
+/* make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+ 
+

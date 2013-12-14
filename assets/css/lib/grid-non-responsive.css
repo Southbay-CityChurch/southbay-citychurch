@@ -1,0 +1,111 @@
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.row > [class^="grid-"] {
+	float: left;
+	border-left: 20px solid transparent;
+}
+.row > [class^="grid-"]:first-child { border-left-width: 0; }
+
+.row [class^="push-"],
+.row [class^="pull-"] { position: relative; }
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha { margin-left: 0;  }
+.omega { margin-right: 0; }
+
+/* Grid >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+.grid-1  { width: 60px;  }
+.grid-2  { width: 120px; }
+.grid-3  { width: 180px; }
+.grid-4  { width: 240px; }
+.grid-5  { width: 300px; }
+.grid-6  { width: 360px; }
+.grid-7  { width: 420px; }
+.grid-8  { width: 480px; }
+.grid-9  { width: 520px; }
+.grid-10 { width: 600px; }
+.grid-11 { width: 660px; }
+.grid-12 { width: 720px; }
+.grid-13 { width: 780px; }
+.grid-14 { width: 840px; }
+.grid-15 { width: 900px; }
+.grid-16 { width: 960px; }
+
+/* Prefix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+.prefix-1  { padding-left: 60px;  }
+.prefix-2  { padding-left: 120px; }
+.prefix-3  { padding-left: 180px; }
+.prefix-4  { padding-left: 240px; }
+.prefix-5  { padding-left: 300px; }
+.prefix-6  { padding-left: 360px; }
+.prefix-7  { padding-left: 420px; }
+.prefix-8  { padding-left: 480px; }
+.prefix-9  { padding-left: 540px; }
+.prefix-10 { padding-left: 600px; }
+.prefix-11 { padding-left: 660px; }
+.prefix-12 { padding-left: 720px; }
+.prefix-13 { padding-left: 780px; }
+.prefix-14 { padding-left: 840px; }
+.prefix-15 { padding-left: 900px; }
+
+
+/* Suffix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+.suffix-1  { padding-right: 60px;  }
+.suffix-2  { padding-right: 120px; }
+.suffix-3  { padding-right: 180px; }
+.suffix-4  { padding-right: 240px; }
+.suffix-5  { padding-right: 300px; }
+.suffix-6  { padding-right: 360px; }
+.suffix-7  { padding-right: 420px; }
+.suffix-8  { padding-right: 480px; }
+.suffix-9  { padding-right: 540px; }
+.suffix-10 { padding-right: 600px; }
+.suffix-11 { padding-right: 660px; }
+.suffix-12 { padding-right: 720px; }
+.suffix-13 { padding-right: 780px; }
+.suffix-14 { padding-right: 840px; }
+.suffix-15 { padding-right: 900px; }
+
+
+/* Push Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+.push-1  { left: 60px;  }
+.push-2  { left: 120px; }
+.push-3  { left: 180px; }
+.push-4  { left: 240px; }
+.push-5  { left: 300px; }
+.push-6  { left: 360px; }
+.push-7  { left: 420px; }
+.push-8  { left: 480px; }
+.push-9  { left: 540px; }
+.push-10 { left: 600px; }
+.push-11 { left: 660px; }
+.push-12 { left: 720px; }
+.push-13 { left: 780px; }
+.push-14 { left: 840px; }
+.push-15 { left: 900px; }
+
+
+/* Pull Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+.pull-1  { left: -60px;  }
+.pull-2  { left: -120px; }
+.pull-3  { left: -180px; }
+.pull-4  { left: -240px; }
+.pull-5  { left: -300px; }
+.pull-6  { left: -360px; }
+.pull-7  { left: -420px; }
+.pull-8  { left: -480px; }
+.pull-9  { left: -540px; }
+.pull-10 { left: -600px; }
+.pull-11 { left: -660px; }
+.pull-12 { left: -720px; }
+.pull-13 { left: -780px; }
+.pull-14 { left: -840px; }
+.pull-15 { left: -900px; }
+*

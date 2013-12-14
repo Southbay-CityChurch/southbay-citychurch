@@ -1,0 +1,340 @@
+/* -------------------------------------------------------------- 
+  
+	Custom CSS Framework
+	
+	Author: Eric Ritchey of E&J Design
+	Date:   2011-02-17
+	
+	Versions
+		0.1    2011-02-17    Initial Creation and Development
+
+
+
+
+	----------------------------------------------
+	TABLE OF CONTENTS
+	----------------------------------------------
+	1. @import rules
+	2. site styles
+	3. print css
+	4. mobile css
+
+-------------------------------------------------------------- */
+
+@import "lib/reset.css";
+@import "lib/grid-responsive.css";
+@import "lib/typography.css";
+@import "lib/forms.css";
+@import "lib/buttons.css";
+@import "lib/icons.css";
+@import "lib/helpers.css";
+
+/* Site
+-------------------------------------------------------------- */
+
+html,
+body { height: 90%; }
+body {
+	background: rgb(239,239,239);
+	background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 10%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(239,239,239,1) 100%);
+	background:    -moz-linear-gradient(top,  rgba(239,239,239,1) 10%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(239,239,239,1) 100%);
+	background:     -ms-linear-gradient(top,  rgba(239,239,239,1) 10%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(239,239,239,1) 100%);
+	background:      -o-linear-gradient(top,  rgba(239,239,239,1) 10%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(239,239,239,1) 100%);
+	background:         linear-gradient(top,  rgba(239,239,239,1) 10%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(239,239,239,1) 100%);
+
+    background-attachment: fixed;
+}
+/* -- Playing Nice with IE -- */
+.ie9 body    { background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); }
+.lteie8 body { filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#efefef',GradientType=0 ); }
+
+/* -- Titles -- */
+.title { margin: 1em 0 .5em; padding-bottom: .1em; border-bottom: 1px solid rgba(0,0,0,.1)}
+
+.subtitle { border-bottom-color: transparent; }
+
+.title-logo {
+	float: left;
+	margin: 0;
+	line-height: 1;
+}
+.title-logo a {
+	color: #666;
+	text-shadow: 1px 1px 1px rgba(68,68,68,0);
+}
+.title-logo a:hover {
+	color: #444;
+	border-bottom-color: transparent;
+	text-shadow: 0 0 3px rgba(68,68,68,.3);
+}
+.title-logo a span { color: #b2432c; }
+.title-logo a:hover span {
+	color: #b2432c;
+	text-shadow: 0 0 3px rgba(178,67,44,.3);
+}
+
+.list-header { margin-bottom: 1em; }
+.list-header strong { display: block; }
+
+/* -- Navs -- */
+.nav-main {
+	margin-top: 1.7%;
+	float: right;
+	font-size: 140%;
+}
+.nav-main ul { margin: 0; padding: 0; }
+.nav-main li {
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.nav-main li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* -- Page Sections -- */
+.header,
+.footer {
+	height: 8%;
+	min-height: 70px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,.88);
+
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.3);
+	   -moz-box-shadow: 0 0 4px rgba(0,0,0,.3);
+	        box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+.footer p {
+	margin: 15px 0 0 0;
+	padding: 0;
+	float: left;
+}
+.footer img { float: right; }
+
+.content-contain {
+	margin-top: 100px;
+	padding-bottom: 75px;
+}
+
+.learn-more,
+.learn-more:hover { color: #b2432c; }
+.learn-more:hover { border-bottom-color: #b2432c; }
+
+.learn-more { float: right; margin-top: 10px;}
+.learn-more span {
+	position: relative;
+	top: 2px;
+
+	font-size: 150%;
+	line-height: 1;
+}
+
+.divider {
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.about .title-header span       { color: #b2432c; }
+.churches .title-header span    { color: #363; }
+.network .title-header span     { color: #0369b2; }
+.development .title-header span { color: #002d5b; }
+
+
+/* --- Print Stylesheet embedded as an @media call --- */
+@media print {
+	/* Black prints faster: http://sanbeiji.com/archives/953 */
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+		filter:none !important;
+		-ms-filter: none !important;
+	}
+
+	body, h1, h2, h3, h4, h5, h6  {
+		font: 10px/1.5 Helvetica, Arial, Verdana, sans-serif;
+		color: #000;
+		background: none;
+	}
+
+	p, h2, h3 { orphans: 3; widows: 3;   }
+	h2, h3    { page-break-after: avoid; }
+
+
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	pre, blockquote   { border: 1px solid #999; page-break-inside: avoid; }
+	blockquote {
+		margin: 1.5em;
+		padding: 1em;
+		font-style: italic;
+		font-size: .9em;
+	}
+	
+	/* http://css-discuss.incutio.com/wiki/Printing_Tables */
+	thead   { display: table-header-group; }
+	tr, img { page-break-inside: avoid;    }
+	
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+
+
+	code { font: .9em Courier, monospace; } 
+
+	img { float: left; margin: 1.5em 1.5em 1.5em 0; }
+	a img { border: none; }
+	p img.top { margin-top: 0; }
+
+	hr {
+		background: #ccc;
+		color: #ccc;
+		width: 100%;
+		height: 2px;
+		margin: 2em 0;
+		padding: 0;
+		border: none;
+	}
+
+	.small  { font-size:  .9em; }
+	.large  { font-size: 1.1em; }
+	.quiet  { color: #999; }
+	.hide   { display: none; }
+
+	a,
+	a:link,
+	a:visited {
+		color: #444 !important;
+		text-decoration: underline;
+		background: transparent;
+		font-weight: 700;
+	}
+	a[href]:after,
+	a:link:after,
+	a:visited:after { content: " (" attr(href) ")"; font-size: 90%; }
+
+	/* Don't show links for images, or javascript/internal links */
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after { content: ""; }
+}
+@media all and (max-width: 1080px) {
+	.header .wrap { width: 95%; }
+}
+@media all and (max-width: 985px){
+	.wrap-narrow { width: 95%; max-width: none; }
+	.header { height: 10%; text-align: center; }
+	.title-logo,
+	.nav-main { float: none; }
+	.header .wrap { margin-top: 0; }
+	.btn { font-size: 180%; }
+	
+	.nav-main { margin-top: .7%; }
+	
+}
+@media all and (max-width: 750px) {
+	h1.title { text-align: center; }
+	.row > [class^="grid-"] {
+		width: 100%;
+		border-left: 0;
+	}
+	.row > [class^="grid-"]:first-child {
+		text-align: center;
+		margin: auto;
+		width: auto;
+		float: none;
+		display: block;
+	}
+	.row > [class^="grid-"] .btn {
+		margin: auto;
+		font-size: 200%;
+	}
+	.learn-more {
+		display: block;
+		text-align: center;
+		float: none;
+		font-size: 150%;
+	}
+	.title-header + p {
+		margin-bottom: 0;
+	}
+	
+}
+@media all and (max-width: 600px) {
+	.nav-main li { margin-left: 3px; padding-left: 6px; border-left: 1px solid #ddd;}
+	.nav-main li:first-child { border-left-color: transparent; }
+	.nav-main li.font-overlock { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 80%; }
+}
+
+@media all and (max-width: 500px) {
+	.nav-main a > span { display: none; }
+}
+@media all and (max-width: 400px) {
+	body,
+	html { height: 100%; }
+	h1 { font-size: 2.25em; }
+	h2 { font-size: 1.75em; line-height: 1 }
+	h3 { font-size: 1.0em; }
+	h4 { font-size: 1.0em; }
+	h5 { font-size: 1.0em; }
+	h6 { font-size: 1.0em; }
+	
+	p { font-size: 1em; }
+	
+	.nav-main li { margin: 0 0 10px 0; padding-left: 4px; }
+	
+	.btn .inner { display: block; }
+	
+	.header,
+	.footer { position: static; overflow: hidden; height: auto;  }
+	.content-contain { margin: 20px 0; padding-bottom: 0; }
+	.header .wrap { width: 97%; }
+	.wrap,
+	.wrap-narrow { width: 95%;  }
+	
+	.header h1 { font-size: 2.5em; }
+	
+	.title-header {
+		margin-top: 10px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	
+	.learn-more:hover { border-bottom-color: transparent; }
+
+	.footer { text-align: center; height: auto; overflow: hidden;}
+	.footer p,
+	.footer img {
+		float: none;
+		display: block;
+		text-align: center;
+		margin: 15px auto;
+	}
+
+	
+}
+/* Media queries for responsive design *
+@media all and (orientation:portrait)  { /* Style adjustments for portrait mode goes here *  }
+@media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here * }
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome) 
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ *
+@media screen and (max-device-width: 480px) {
+	/* Prevent iOS, WinMobile from adjusting font size *
+	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+}
+*/

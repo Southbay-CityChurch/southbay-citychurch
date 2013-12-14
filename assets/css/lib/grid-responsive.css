@@ -1,0 +1,85 @@
+/* -- Wrappers -- */
+.wrap,
+.wrap-narrow {
+	margin: 10px auto;
+}
+.wrap {
+	width: 85%;
+}
+.wrap-narrow {
+	width: 70%;
+	max-width: 70%;
+}
+.header .wrap {
+	margin: 20px auto 0;
+	width: 90%;
+}
+
+.row > [class^="grid-"] {
+	float: left;
+	border-left: 20px solid transparent;
+}
+.row > [class^="grid-"]:first-child { border-left-width: 0; }
+
+.row > [class^="push-"],
+.row > [class^="pull-"] { position: relative; }
+
+/* ---------------------------------------------------------------
+16 Columns, ~60px each
+--------------------------------------------------------------- */
+.grid-1  { width:  6.25%; }           .grid-2  { width: 12.5%;  }
+.grid-3  { width: 18.75%; }           .grid-4  { width: 25%;    }
+.grid-5  { width: 31.25%; }           .grid-6  { width: 37.5%;  }
+.grid-7  { width: 43.75%; }           .grid-8  { width: 50%;    }
+.grid-9  { width: 54.166666666667%; } .grid-10 { width: 62.5%;  }
+.grid-11 { width: 68.75%; }           .grid-12 { width: 75%;    }
+.grid-13 { width: 81.25%; }           .grid-14 { width: 87.5%;  }
+.grid-15 { width: 93.75%; }           .grid-16 { width: 100%;   }
+
+/* ---------------------------------------------------------------
+Prefix Extra Space >> 16 Columns, ~60px each
+--------------------------------------------------------------- */
+.prefix-1  { padding-left:  6.25%; }           .prefix-2  { padding-left: 12.5%;  }
+.prefix-3  { padding-left: 18.75%; }           .prefix-4  { padding-left: 25%;    }
+.prefix-5  { padding-left: 31.25%; }           .prefix-6  { padding-left: 37.5%;  }
+.prefix-7  { padding-left: 43.75%; }           .prefix-8  { padding-left: 50%;    }
+.prefix-9  { padding-left: 54.166666666667%; } .prefix-10 { padding-left: 62.5%;  }
+.prefix-11 { padding-left: 68.75%; }           .prefix-12 { padding-left: 75%;    }
+.prefix-13 { padding-left: 81.25%; }           .prefix-14 { padding-left: 87.5%;  }
+.prefix-15 { padding-left: 93.75%; }
+
+/* ---------------------------------------------------------------
+Suffix Extra Space >> 16 Columns, ~60px each
+--------------------------------------------------------------- */
+.suffix-1  { padding-right:  6.25%; }           .suffix-2  { padding-right: 12.5%;  }
+.suffix-3  { padding-right: 18.75%; }           .suffix-4  { padding-right: 25%;    }
+.suffix-5  { padding-right: 31.25%; }           .suffix-6  { padding-right: 37.5%;  }
+.suffix-7  { padding-right: 43.75%; }           .suffix-8  { padding-right: 50%;    }
+.suffix-9  { padding-right: 54.166666666667%; } .suffix-10 { padding-right: 62.5%;  }
+.suffix-11 { padding-right: 68.75%; }           .suffix-12 { padding-right: 75%;    }
+.suffix-13 { padding-right: 81.25%; }           .suffix-14 { padding-right: 87.5%;  }
+.suffix-15 { padding-right: 93.75%; }
+
+/* ---------------------------------------------------------------
+Push Space >> 16 Columns, ~60px each
+--------------------------------------------------------------- */
+.push-1  { left:  6.25%; }           .push-2  { left: 12.5%;  }
+.push-3  { left: 18.75%; }           .push-4  { left: 25%;    }
+.push-5  { left: 31.25%; }           .push-6  { left: 37.5%;  }
+.push-7  { left: 43.75%; }           .push-8  { left: 50%;    }
+.push-9  { left: 54.166666666667%; } .push-10 { left: 62.5%;  }
+.push-11 { left: 68.75%; }           .push-12 { left: 75%;    }
+.push-13 { left: 81.25%; }           .push-14 { left: 87.5%;  }
+.push-15 { left: 93.75%; }
+
+/* ---------------------------------------------------------------
+Pull Space >> 16 Columns, ~60px each
+--------------------------------------------------------------- */
+.pull-1  { left:  -6.25%; }           .pull-2  { left: -12.5%;  }
+.pull-3  { left: -18.75%; }           .pull-4  { left: -25%;    }
+.pull-5  { left: -31.25%; }           .pull-6  { left: -37.5%;  }
+.pull-7  { left: -43.75%; }           .pull-8  { left: -50%;    }
+.pull-9  { left: -54.166666666667%; } .pull-10 { left: -62.5%;  }
+.pull-11 { left: -68.75%; }           .pull-12 { left: -75%;    }
+.pull-13 { left: -81.25%; }           .pull-14 { left: -87.5%;  }
+.pull-15 { left: -93.75%; }
