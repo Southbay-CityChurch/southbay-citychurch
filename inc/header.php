@@ -6,7 +6,7 @@
 				<li class="font-overlock"><a href="about.php" title="About SBCC">About</a></li>
 				<li class="font-overlock"><a href="church-communities.php" title="Church Communities"><span>Church </span>Communities</a></li>
 				<li class="font-overlock"><a href="church-network.php" title="City Church Network"><span>Church </span>Network</a></li>
-				<li class="font-overlock"><a href="lifelong-development.php" title="Development">Development</a></li>
+				<li class="font-overlock"><a href="lifelong-development.php" title="Lifelong Learning">Learning</a></li>
 			</ul>
 		</nav>
 	</div>
